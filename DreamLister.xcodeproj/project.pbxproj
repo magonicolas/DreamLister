@@ -22,6 +22,7 @@
 		60B31ACC1D78A8DC001755E1 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B31AC41D78A8DC001755E1 /* ItemType+CoreDataClass.swift */; };
 		60B31ACD1D78A8DC001755E1 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B31AC51D78A8DC001755E1 /* ItemType+CoreDataProperties.swift */; };
 		60B31AD21D78AE2C001755E1 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B31AD11D78AE2C001755E1 /* MaterialView.swift */; };
+		60B31AD41D78B002001755E1 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B31AD31D78B002001755E1 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		60B31AC41D78A8DC001755E1 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		60B31AC51D78A8DC001755E1 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		60B31AD11D78AE2C001755E1 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		60B31AD31D78B002001755E1 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				60B31AD11D78AE2C001755E1 /* MaterialView.swift */,
+				60B31AD31D78B002001755E1 /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60B31AD41D78B002001755E1 /* ItemCell.swift in Sources */,
 				60B31AAC1D78A563001755E1 /* MainVC.swift in Sources */,
 				60B31AC81D78A8DC001755E1 /* Store+CoreDataClass.swift in Sources */,
 				60B31ACC1D78A8DC001755E1 /* ItemType+CoreDataClass.swift in Sources */,
