@@ -22,6 +22,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        generateTestData()
+        attemptFetch()
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -68,6 +71,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         fetchRequest.sortDescriptors = [dateSort]
         
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        
+        self.controller = controller
         
         do {
             try controller.performFetch()
@@ -119,6 +124,24 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
             break
             
         }
+    }
+    
+    func generateTestData()
+    {
+        let item = Item(context: context)
+        item.title = "MacBook Pro"
+        item.price = 1800
+        item.details = "I can`t wait until the september event, I hope they release new MPBs"
+        
+        let item2 = Item(context: context)
+        item2.title = "Bose Headphones"
+        item2.price = 300
+        item2.details = "But man, its so nice to be able to block out everyone with the noise canceling tech."
+        
+        let item3 = Item(context: context)
+        item3.title = "Tesla Model S"
+        item3.price = 110000
+        item3.details = "Oh man this is a beautifull car. And One dau, I Will own it!"
     }
     
     

@@ -30,7 +30,7 @@
                                 </segments>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6b8-0P-gwh">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6b8-0P-gwh">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="KOf-Er-ghg" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
@@ -64,8 +64,8 @@
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Someday my dream will come true and I will own this car. Just you wait." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ex-Gs-P0O">
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Someday my dream will come true and I will own this car. Just you wait." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ex-Gs-P0O">
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -82,7 +82,7 @@
                                                         <constraint firstAttribute="trailing" secondItem="nLF-YY-HIB" secondAttribute="trailing" constant="8" id="oXI-Po-d58"/>
                                                         <constraint firstAttribute="trailing" secondItem="1Ex-Gs-P0O" secondAttribute="trailing" constant="8" id="qgX-Kf-jCj"/>
                                                         <constraint firstAttribute="bottom" secondItem="1Ex-Gs-P0O" secondAttribute="bottom" constant="8" id="s0i-mr-G15"/>
-                                                        <constraint firstItem="1Ex-Gs-P0O" firstAttribute="top" secondItem="mLT-lH-WZq" secondAttribute="bottom" constant="8" id="vcb-pu-Izn"/>
+                                                        <constraint firstItem="1Ex-Gs-P0O" firstAttribute="top" secondItem="mLT-lH-WZq" secondAttribute="bottom" constant="2" id="vcb-pu-Izn"/>
                                                         <constraint firstItem="mLT-lH-WZq" firstAttribute="leading" secondItem="Uwg-o8-VPo" secondAttribute="trailing" constant="8" id="wEd-8c-nCN"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
