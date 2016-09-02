@@ -161,8 +161,7 @@
                                     <constraint firstAttribute="width" constant="100" id="ZIC-3n-XWh"/>
                                 </constraints>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Prh-mO-33T" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
-                                <frame key="frameInset" minX="124" minY="85" width="235" height="40"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Prh-mO-33T" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="HvS-V2-EeS"/>
@@ -203,6 +202,9 @@
                                 <state key="normal" title="Save Item">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="2GF-MW-y3Y" eventType="touchUpInside" id="5NT-JE-4YH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKf-8l-otY">
                                 <constraints>
@@ -225,6 +227,7 @@
                             <constraint firstItem="q8F-2v-TKL" firstAttribute="trailing" secondItem="PIx-ZP-OYC" secondAttribute="trailingMargin" id="Dg9-rC-ufv"/>
                             <constraint firstItem="nCl-tW-M89" firstAttribute="leading" secondItem="PIx-ZP-OYC" secondAttribute="leadingMargin" id="EH9-bF-s9Z"/>
                             <constraint firstItem="q8F-2v-TKL" firstAttribute="top" secondItem="Prh-mO-33T" secondAttribute="bottom" constant="10" id="F0f-DP-jXZ"/>
+                            <constraint firstItem="Prh-mO-33T" firstAttribute="trailing" secondItem="PIx-ZP-OYC" secondAttribute="trailingMargin" id="F6v-Ia-tMn"/>
                             <constraint firstItem="q8F-2v-TKL" firstAttribute="leading" secondItem="lMc-yS-2ZW" secondAttribute="trailing" constant="8" id="Fhv-xo-E74"/>
                             <constraint firstItem="ECl-lb-uHp" firstAttribute="trailing" secondItem="PIx-ZP-OYC" secondAttribute="trailingMargin" id="GbL-an-xvO"/>
                             <constraint firstItem="4oM-dv-7fi" firstAttribute="top" secondItem="ECl-lb-uHp" secondAttribute="bottom" constant="20" id="I05-Of-cgq"/>
@@ -243,6 +246,12 @@
                             <color key="tintColor" red="0.86666666670000003" green="0.17254901959999999" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="detailsField" destination="nCl-tW-M89" id="jQ8-fh-cSP"/>
+                        <outlet property="priceField" destination="q8F-2v-TKL" id="DoS-bS-vFp"/>
+                        <outlet property="storePicker" destination="AQ4-ht-YIM" id="SNW-LR-U7E"/>
+                        <outlet property="titleField" destination="Prh-mO-33T" id="6MW-iw-g1t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFZ-vK-7Rp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
